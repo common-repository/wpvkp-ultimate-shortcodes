@@ -1,0 +1,7 @@
+Contact Form 7 workaround
+
+/custom-css/class.jetpack.php - rename class
+/custom-css/custom-css.php - rename old class to new class
+/custom-css.php - remove plugin header to avoid plugin header error messages
+
+This is because Contact Form 7 thinks JetPack is loaded and looks for the contact form module, which we don't load the function to do this, regular JetPack does.
